@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Work;
 use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
     public function index()
     {
-        return view('page.work');
+        $work = Work::all();
+        return view('page.work',['work' => $work]);
     }
 }
