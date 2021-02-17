@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Skills;
 use Illuminate\Http\Request;
 
 class SkillsController extends Controller
 {
     public function index()
     {
-        return view('page.skills');
+        $skills = Skills::all();
+        return view('page.skills',['skills' => $skills]);
     }
 }
