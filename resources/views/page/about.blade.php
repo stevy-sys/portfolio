@@ -15,30 +15,14 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Graphic Design</h3>
+								@foreach ($about as $item)
+									<div class="col-md-3 animate-box" data-animate-effect="{{$item->animate}}">
+										<div class="services {{$item->color}}">
+											<span class="{{$item->taille}}"><i class="{{$item->icon}}"></i></span>
+											<h3>{{$item->qualite}}</h3>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>Web Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Software</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Application</h3>
-									</div>
-								</div>
+								@endforeach
 							</div>
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
