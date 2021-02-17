@@ -11,6 +11,7 @@
 										<h2 class="colorlib-heading">{{( __('about.qui')) }}</h2>
 										<p><strong>{{(__('home.moi'))}}</strong>{{ __('about.date') }} {{ __('about.passion')}} </p>
 										<p>{{ __('about.probleme') }} {{__('about.autodidacte') }}</p>
+										<p>{{ __('about.qualite') }}</p>
 									</div>
 								</div>
 							</div>
