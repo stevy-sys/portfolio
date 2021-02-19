@@ -27,14 +27,14 @@
 										</div>
 									</div>
 								</article>
+								<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+									<div class="timeline-entry-inner">
+										<div class="timeline-icon color-none">
+										</div>
+									</div>
+								</article>
 							@endforeach
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-								<div class="timeline-entry-inner">
-									<div class="timeline-icon color-none">
-									</div>
-								</div>
-							</article>
 					      </div>
 					   </div>
 				   </div>

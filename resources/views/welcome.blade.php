@@ -53,42 +53,39 @@
     <body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Jackson Ford</a></h1>
-				<span class="position"><a href="#">UI/UX/Designer</a> in Philippines</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar-tsy-tapakevtra" class="collapse">
-					<ul>
-						<li class="active"><a href="/">Home</a></li>
-						<li><a href="/about" >About</a></li>
-						<li><a href="/service">Services</a></li>
-						<li><a href="/skills">Skills</a></li>
-						<li><a href="/education">Education</a></li>
-						<li><a href="/experience" data-nav-section="experience">Experience</a></li>
-						<li><a href="/work" data-nav-section="work">Work</a></li>
-						<li><a href="/blog" data-nav-section="blog">Blog</a></li>
-						<li><a href="/contact" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+		    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+                <div class="text-center">
+                    <div class="author-img" style="background-image: url(./images/za.jpg);"></div>
+                    <h1 id="colorlib-logo"><a href="/">{{__('menu.nom')}}</a></h1>
+                    <span class="position"><a href="/skills">{{__('menu.metier')}}</a></span>
+                </div>
+                <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                    <div id="navbar-tsy-tapakevtra" class="collapse">
+                        <ul>
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="/about" >About</a></li>
+                            <li><a href="/service">Services</a></li>
+                            <li><a href="/skills">Skills</a></li>
+                            <li><a href="/education">Education</a></li>
+                            <li><a href="/experience" data-nav-section="experience">Experience</a></li>
+                            <li><a href="/work" data-nav-section="work">Work</a></li>
+                            <li><a href="/blog" data-nav-section="blog">Blog</a></li>
+                            <li><a href="/contact" data-nav-section="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
 
-            <div class="colorlib-footer">
-                <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
-                <ul>
-                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                    <li><a href="#"><i class="icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                </ul>
-            </div>
-
-		</aside>
+                <div class="colorlib-footer">
+                    <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </small> </p>
+                    <ul>
+                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                    </ul>
+                </div>
+            </aside>
             <div id="colorlib-main">
                 @yield('content');
             </div><!-- end:colorlib-main -->
