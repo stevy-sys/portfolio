@@ -27,7 +27,7 @@
 				</div>
             </section>
             
-            <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+            <!--<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -51,5 +51,5 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 @endsection
