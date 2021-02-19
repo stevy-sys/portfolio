@@ -16,7 +16,7 @@
 									<i class="icon-globe-outline"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">info@domain.com</a></p>
+									<p><a href="#">{{__('contact.domaine')}}</a></p>
 								</div>
 							</div>
 
@@ -25,7 +25,7 @@
 									<i class="icon-map"></i>
 								</div>
 								<div class="colorlib-text">
-									<p>198 West 21th Street, Suite 721 New York NY 10016</p>
+									<p>{{__('contact.adresse')}}</p>
 								</div>
 							</div>
 
@@ -34,25 +34,26 @@
 									<i class="icon-phone"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="tel://">+123 456 7890</a></p>
+									<p><a href="tel://">{{__('contact.telephone')}}</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
+									<form action="/contact" method="POST">
+										@csrf
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+											<input type="text" class="form-control" name="name" placeholder="Name">
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+											<input type="text" class="form-control" name="email" placeholder="Email">
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
+											<input type="text" class="form-control" name="subject" placeholder="Subject">
 										</div>
 										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
