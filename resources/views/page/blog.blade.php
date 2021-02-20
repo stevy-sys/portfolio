@@ -13,10 +13,10 @@
 						@foreach ($blog as $item)
 							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="{{$item->animate}}">
 								<div class="blog-entry">
-									<a href="{{$item->url}}" class="blog-img"><img src="{{$item->img}}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+									<a href="/blog/{{$item->id}}" class="blog-img"><img src="{{$item->img}}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 									<div class="desc">
 										<span><small>{{$item->date}}</small> | <small> {{$item->titre}} </small> | <small> <i class="icon-bubble3"></i> {{$item->commentaire}}</small></span>
-										<h3><a href="{{$item->url}}">{{$item->title}}</a></h3>
+										<h3><a href="/blog/{{$item->id}}">{{$item->title}}</a></h3>
 										<p>{{$item->content}}</p>
 									</div>
 								</div>

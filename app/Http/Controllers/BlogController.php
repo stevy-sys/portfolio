@@ -12,4 +12,10 @@ class BlogController extends Controller
         $blog = Blog::all();
         return view('page.blog',['blog' => $blog]);
     }
+
+    public function show($id)
+    {
+        //$blog = Blog::where('id',$id)->first(['img','date','titre','commentaire','title','content']);
+        return view('blog.index');
+    }
 }

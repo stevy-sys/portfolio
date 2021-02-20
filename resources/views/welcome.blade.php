@@ -27,20 +27,20 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
         
         <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
         <!-- Flexslider  -->
-        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="{{asset('css/flexslider.css')}}">
         <!-- Flaticons  -->
-        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
         <!-- Owl Carousel -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
         <!-- Theme style  -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -56,7 +56,7 @@
 		    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
                 <div class="text-center">
-                    <div class="author-img" style="background-image: url(./images/za.jpg);"></div>
+                    <div class="author-img" style="background-image: url({{asset('./images/za.jpg')}});"></div>
                     <h1 id="colorlib-logo"><a href="/">{{__('menu.nom')}}</a></h1>
                     <span class="position"><a href="/skills">{{__('menu.metier')}}</a></span>
                 </div>
@@ -93,22 +93,22 @@
     </div><!-- end:colorlib-page -->
 
         <!-- jQuery -->
-        <script src="js/jquery.min.js"></script>
+        <script src="{{asset('js/jquery.min.js')}}"></script>
         <!-- jQuery Easing -->
-        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
         <!-- Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <!-- Waypoints -->
-        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
         <!-- Flexslider -->
-        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="{{asset('js/jquery.flexslider-min.js')}}"></script>
         <!-- Owl carousel -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
         <!-- Counters -->
-        <script src="js/jquery.countTo.js"></script>
+        <script src="{{asset('js/jquery.countTo.js')}}"></script>
 
 
         <!-- MAIN JS -->
-        <script src="js/main.js"></script>
+        <script src="{{asset('js/main.js')}}"></script>
 	</body>
 </html>
