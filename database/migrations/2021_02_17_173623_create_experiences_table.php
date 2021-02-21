@@ -20,7 +20,7 @@ class CreateExperiencesTable extends Migration
             $table->string('title');
             $table->string('date');
             $table->string('content');
-            
+            $table->timestamps();
         });
     }
 

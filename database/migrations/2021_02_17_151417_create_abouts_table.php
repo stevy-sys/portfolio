@@ -20,6 +20,7 @@ class CreateAboutsTable extends Migration
             $table->string('color');
             $table->string('taille');
             $table->string('qualite');
+            $table->timestamps();
         });
     }
 

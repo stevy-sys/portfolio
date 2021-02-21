@@ -18,8 +18,8 @@
 							<div class="row">
 								@foreach ($about as $item)
 									<div class="col-md-3 animate-box" data-animate-effect="{{$item->animate}}">
-										<div class="services {{$item->color}}">
-											<span class="{{$item->taille}}"><i class="{{$item->icon}}"></i></span>
+										<div class="services color-{{$item->color}}">
+											<span class="{{$item->taille}}"><i class="icon-{{$item->icon}}"></i></span>
 											<h3>{{$item->qualite}}</h3>
 										</div>
 									</div>

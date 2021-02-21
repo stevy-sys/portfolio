@@ -20,6 +20,7 @@ class CreateWorksTable extends Migration
             $table->string('url');
             $table->string('title');
             $table->string('type');
+            $table->timestamps();
         });
     }
 

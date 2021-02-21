@@ -22,7 +22,7 @@
 								<div class="progress-wrap">
 									<h3>{{$item->techno}}</h3>
 									<div class="progress">
-										<div class="progress-bar {{$item->color}}" role="progressbar" aria-valuenow="{{$item->pourcentage}}"
+										<div class="progress-bar color-{{$item->color}}" role="progressbar" aria-valuenow="{{$item->pourcentage}}"
 										aria-valuemin="0" aria-valuemax="100" style="width:{{$item->pourcentage}}%">
 										<span>{{$item->pourcentage}}%</span>
 										</div>

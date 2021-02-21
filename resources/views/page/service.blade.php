@@ -12,9 +12,9 @@
 					<div class="row row-pt-md">
 						@foreach ($service as $item)
 							<div class="col-md-4 text-center animate-box">
-								<div class="services {{$item->color}}">
+								<div class="services color-{{$item->color}}">
 									<span class="icon">
-										<i class="{{$item->icon}}"></i>
+										<i class="icon-{{$item->icon}}"></i>
 									</span>
 									<div class="desc">
 										<h3>{{$item->title}}</h3>

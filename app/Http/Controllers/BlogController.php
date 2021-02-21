@@ -16,8 +16,9 @@ class BlogController extends Controller
     public function show($id)
     {
         //$blog = Blog::where('id',$id)->first(['img','date','titre','commentaire','title','content']);
+        $recently = Blog::get(['titre','id']);
         $blog = Blog::where('id',$id)->first();
         //dd($blog);
-        return view('blog.index',['blog'=>$blog]);
+        return view('blog.index',compact('blog','recently'));
     }
 }

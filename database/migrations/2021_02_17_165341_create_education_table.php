@@ -15,10 +15,11 @@ class CreateEducationTable extends Migration
     {
         Schema::create('education', function (Blueprint $table) {
             $table->id();
-            $table->string('id_heading');
+            $table->string('id_heading')->nullable();
             $table->string('title');
-            $table->string('id_collapse');
+            $table->string('id_collapse')->nullable();
             $table->string('content');
+            $table->timestamps();
         });
     }
 

@@ -18,6 +18,8 @@ class CreateSkillsTable extends Migration
             $table->string('techno');
             $table->string('color');
             $table->string('pourcentage');
+            $table->string('animate');
+            $table->timestamps();
         });
     }
 

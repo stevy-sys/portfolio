@@ -17,7 +17,7 @@
 								<article class="timeline-entry animate-box" data-animate-effect="{{$item->animate}}">
 									<div class="timeline-entry-inner">
 
-										<div class="timeline-icon {{$item->color}}">
+										<div class="timeline-icon color-{{$item->color}}">
 											<i class="icon-pen2"></i>
 										</div>
 
