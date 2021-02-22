@@ -85,26 +85,17 @@
                                 <hr>
                             @endforeach
                         </div>
+                        <br>
                         <h2>Leave your comment</h2>
-
                         <form id="commentform" action="#" method="post" name="comment-form">
                             <div class="row">
-                                <div class="span4 marginbot30">
-                                    <input class="form-control" type="text" placeholder="* Enter your full name" />
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">votre commentaire</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="100" rows="10"></textarea>
                                 </div>
-                                <br>
-                                <div class="span4 marginbot30">
-                                    <input class="form-control" type="text" placeholder="* Enter your email address" />
-                                </div>
-                                <br>
-                                <div class="span8 marginbot30">
-                                    <p>
-                                        <textarea rows="12" class="input-block-level form-control" placeholder="*Your comment here"></textarea>
-                                    </p>
-                                    <p class="marginbot30">
-                                        <button class="btn btn-success" type="submit">Submit comment</button>
-                                    </p>
-                                </div>
+                                <p class="">
+                                    <button class="btn btn-success" type="submit">Submit comment</button>
+                                </p>
                             </div>
                         </form>
                     </div>

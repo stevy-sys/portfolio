@@ -41,6 +41,7 @@
         <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
         <!-- Theme style  -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -51,6 +52,7 @@
 
     </head>
     <body>
+    
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -86,6 +88,7 @@
                     </ul>
                 </div>
             </aside>
+
             <div id="colorlib-main">
                 @yield('content');
             </div><!-- end:colorlib-main -->
