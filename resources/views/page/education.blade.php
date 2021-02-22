@@ -12,12 +12,14 @@
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								
+								
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									@foreach ($education as $item)
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="{{$item->id_heading}}">
 												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{$item->id_collapse}}" aria-expanded="false" aria-controls="collapseThree">{{$item->title}}
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{$item->id_collapse}}" aria-expanded="false" aria-controls="{{$item->id_collapse}}">{{$item->title}}
 													</a>
 												</h4>
 											</div>
@@ -29,6 +31,7 @@
 										</div>
 									@endforeach
 								</div>
+								
 							</div>
 						</div>
 					</div>

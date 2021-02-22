@@ -7,7 +7,7 @@
             <div class="col-lg-4">
             <!--left-->
                 <aside class="left-sidebar">
-                    <div class="widget">
+                    <div class="widget mb-5">
                         <form>
                         <div class="input-append">
                             <input class="form-control" id="appendedInputButton" type="text" placeholder="Type here">
@@ -16,7 +16,7 @@
                         </form>
                     </div>
 
-                    <div class="widget">
+                    <div class="widget mb-5">
                         <h3>Categories</h3>
                         <ul class="list-group">
                             <li class="list-group-item d-flex justify-content-between align-items-cente"><a href="#">Web design</a><span class="badge bg-primary rounded-pill" > 20</span></li>
@@ -26,7 +26,7 @@
                         </ul>
                     </div>
 
-                    <div class="widget">
+                    <div class="widget mb-5">
                         <h3>Recent posts</h3>
 
                         <ul class="list-group">
