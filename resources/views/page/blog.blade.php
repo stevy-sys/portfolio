@@ -25,7 +25,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 animate-box">
-					<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+					<p>{{$blog->links()}}</p>
 				</div>
 			</div>
 		</div>
