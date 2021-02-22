@@ -25,3 +25,7 @@ Route::get('/experience', 'ExperienceController@index');
 Route::get('/service', 'ServiceController@index');
 Route::get('/skills', 'SkillsController@index');
 Route::get('/work', 'WorkController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
