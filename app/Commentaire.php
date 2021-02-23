@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 */
 class Commentaire extends Model
 {
+    protected $fillable = ['content','blog_id','user_id'];
+    
     public function blog()
     {
         return $this->belongsTo('App\Blog');
