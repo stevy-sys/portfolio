@@ -100,7 +100,7 @@
         <!-- jQuery Easing -->
         <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
         <!-- Bootstrap -->
-        <script src="{{asset('js/bootstrap.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <!-- Waypoints -->
         <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
         <!-- Flexslider -->
