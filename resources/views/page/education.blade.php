@@ -12,8 +12,7 @@
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<div class="fancy-collapse-panel">
-								
-								
+
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									@foreach ($education as $item)
 										<div class="panel panel-default">
@@ -29,9 +28,9 @@
 												</div>
 											</div>
 										</div>
+										<br><br>
 									@endforeach
 								</div>
-								
 							</div>
 						</div>
 					</div>

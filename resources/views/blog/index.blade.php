@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-lg-4">
             <!--left-->
-                <aside class="left-sidebar">
+                <aside class="left-sidebar animate-box" data-animate-effect="fadeInLeft">
                     <div class="widget mb-5">
                         <form>
                         <div class="input-append">
@@ -95,7 +95,7 @@
             <div class="col-lg-8">
             <!--right-->
                 <div class="">
-                    <article class="single">
+                    <article class="single animate-box" data-animate-effect="fadeInRight">
                         <div class="row">
                             <div class="">
                                 <div class="post-image">
@@ -116,7 +116,7 @@
 
                     <div class="comment-area">
                         <h2>{{count($blog->commentaire)}} Commentaires</h2>
-                        <div class="row">
+                        <div class="row animate-box" data-animate-effect="fadeInRight">
                             @foreach ($blog->commentaire as $comment)
                                 <div class="col-lg-2" ><a href="#" class="thumbnail pull-left"><img style="width: 70px" src="{{asset('images/za.jpg')}}" alt="" /></a></div> 
                                 <div class="col-lg-10 marginbot30">

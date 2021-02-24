@@ -41,7 +41,6 @@
         <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
         <!-- Theme style  -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
