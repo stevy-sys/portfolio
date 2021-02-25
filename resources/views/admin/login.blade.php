@@ -8,7 +8,7 @@
                     Accueil
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="">Menu</span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,7 +25,7 @@
                                 <a class="nav-link" href="{{ route('login') }}">Se connecter</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item ml-4">
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">S'enregistrer</a>
                                 </li>
                             @endif
