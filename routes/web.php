@@ -30,3 +30,12 @@ Route::get('/work', 'WorkController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/**admin route */
+
+route::namespace('Admin')->group(function (){
+    Route::get('/admin/login', 'Auth\LoginController@showLoginForm')->name('admin.login');
+    Route::post('/admin/login', 'Auth\LoginController@login');
+    Route::get('/admin/home', 'AdminController@index')->name('admin.home');
+});
+
