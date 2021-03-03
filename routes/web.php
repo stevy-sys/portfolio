@@ -37,5 +37,13 @@ route::namespace('Admin')->group(function (){
     Route::get('/admin/login', 'Auth\LoginController@showLoginForm')->name('admin.login');
     Route::post('/admin/login', 'Auth\LoginController@login');
     Route::get('/admin/home', 'AdminController@index')->name('admin.home');
+    Route::resource('/admin/blog', 'BlogController');
+    Route::resource('/admin/message', 'MessageController');
+    //////
+    Route::resource('/admin/experience', 'ExperienceController');
+    Route::resource('/admin/education', 'EducationController');
+    Route::resource('/admin/service', 'ServiceController');
+    Route::resource('/admin/skill', 'SkillController');
+    Route::resource('/admin/work', 'WorkController');
+    //////
 });
-
