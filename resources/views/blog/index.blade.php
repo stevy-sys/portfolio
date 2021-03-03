@@ -121,7 +121,7 @@
                                 <div class="col-lg-2" ><a href="#" class="thumbnail pull-left"><img style="width: 70px" src="{{asset('images/za.jpg')}}" alt="" /></a></div> 
                                 <div class="col-lg-10 marginbot30">
                                 <div class="media-content">
-                                    <h6><span>{{ getUserName($comment->user_id) }} - </span>{{$comment->created_at}}</h6>
+                                    <h6><span>{{ $comment->user->name }} - </span>{{$comment->created_at}}</h6>
                                     <p>{{$comment->content}}</p>
                                 </div>
                                 <!--<div class="row">

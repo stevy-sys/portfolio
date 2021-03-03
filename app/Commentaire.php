@@ -15,4 +15,9 @@ class Commentaire extends Model
     {
         return $this->belongsTo('App\Blog');
     }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }

@@ -18,12 +18,13 @@ class BlogController extends Controller
 
     public function show($id)
     {
-        //$blog = Blog::where('id',$id)->first(['img','date','titre','commentaire','title','content']);
-        $recently = Blog::get(['titre','id']);
-        $blog = Blog::where('id',$id)->first();
-        //$user = User::find('id',$blog->commentaire)->get();
-        //dd( $blog->commentaire);
-        return view('blog.index',compact('blog','recently'));
+        $recently = Blog::all();
+        if (count($recently) < $id) {
+            return redirect('/blog');
+        } else {
+            $blog = $recently[$id];
+            return view('blog.index',compact('blog','recently'));
+        }
     }
 
     public function store(Request $request)
