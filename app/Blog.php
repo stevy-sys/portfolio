@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Blog extends Model
 {
-    
+    protected $guarded = [];
     public function commentaire()
     {
         return $this->hasMany('App\Commentaire');

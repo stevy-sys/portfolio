@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="img/favicon.png">
 
     <title>Creative - Bootstrap Admin Template</title>
-
     <!-- Bootstrap CSS -->
     <link href="{{asset('admin/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- bootstrap theme -->
