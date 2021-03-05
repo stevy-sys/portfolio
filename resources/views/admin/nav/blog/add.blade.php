@@ -1,7 +1,7 @@
 @extends('layouts.admin.paneladmin')
 
 @section('content')
-<form action="{{route('blog.store') }}" method="post">
+<form action="{{route('blog.store') }}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">titre</label>
@@ -20,14 +20,16 @@
       <input name="animate" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">image</label>
-      <input name="img" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">content</label>
       <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <div>
+    <br>
+    <br>
+    <div class="form-file">
+        <input type="file" name="img" class="form-file-input" id="customFile">
+      </div>
+    <br>
+    <div class="margin-top-5">
         <input type="submit" class="btn btn-primary mt-5" value="creer la publication">
     </div>
 </form>

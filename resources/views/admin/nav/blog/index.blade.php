@@ -16,7 +16,7 @@
     <div class="col-lg-3">
     </div>
   </div>
-
+  <br><br>
   
 
   <div class="album py-5 bg-light">
@@ -25,7 +25,7 @@
         @foreach ($blog as $item)
             <div class="col-lg-4">
               <div class="card shadow-sm">
-                <img src="{{$item->img}}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com">
+                <img src="{{ asset('/storage/'.$item->img) }}" height="200vh" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com">
                 <h3>{{$item->titre}}</h3>
                 <div class="card-body">
                   <p class="card-text">{{$item->title}}</p>

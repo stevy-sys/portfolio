@@ -41,10 +41,13 @@ class BlogController extends Controller
             'titre' => "required",
             'title' => "required",
             'date' => "required",
-            'content' => "required"
+            'content' => "required",
+            'animate' => "required",
+            'img' => "required|image|max:5000"
         ]);
 
         $blog->update($data);
+        $this->storeImage($blog);
         return redirect()->route('blog.index');
     }
 
@@ -56,9 +59,13 @@ class BlogController extends Controller
             'date' => "required",
             'content' => "required",
             'animate' => "required",
-            'img' => "required"
+            'img' => "required|image|max:5000"
         ]);
-        Blog::create($data);
+        $blog = Blog::create($data);
+        
+
+        $this->storeImage($blog);
+
         return redirect()->route('blog.index');
     }
 
@@ -66,5 +73,14 @@ class BlogController extends Controller
     {
         $blog->delete();
         return redirect()->route('blog.index');
+    }
+
+    private function storeImage(Blog $blog)
+    {
+       if (request('img')) {
+           $blog->update([
+               'img' => request('img')->store('blog','public')
+           ]);
+       }
     }
 }

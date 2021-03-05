@@ -102,7 +102,7 @@
                                     <div class="post-heading">
                                         <h1>{{$blog->title}}</h1>
                                     </div>
-                                    <img style="width: 600px" src="{{asset($blog->img)}}" alt="" />
+                                    <img style="width: 600px" src="{{ asset('/storage/'.$blog->img) }}" alt="" />
                                 </div>
                                 <ul class="breadcrumb">
                                     <li href="#" class="breadcrumb-item">By Admin</li>
