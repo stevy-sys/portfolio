@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Blog;
 use App\User;
-use App\Commentaire;
+use App\Http\Models\Blog;
 use Illuminate\Http\Request;
+use App\Http\Models\Commentaire;
 use Illuminate\Support\Facades\Auth;
 
 class BlogController extends Controller

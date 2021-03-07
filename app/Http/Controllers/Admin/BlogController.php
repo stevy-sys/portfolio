@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Blog;
+use App\Http\Models\Blog;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -43,9 +43,8 @@ class BlogController extends Controller
             'date' => "required",
             'content' => "required",
             'animate' => "required",
-            'img' => "required|image|max:5000"
+            'img' => "image|max:5000"
         ]);
-
         $blog->update($data);
         $this->storeImage($blog);
         return redirect()->route('blog.index');

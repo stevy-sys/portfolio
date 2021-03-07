@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Work;
+use App\Http\Models\Work;
 use Illuminate\Http\Request;
 
 class WorkController extends Controller

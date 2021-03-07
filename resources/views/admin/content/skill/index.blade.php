@@ -13,6 +13,7 @@
                 <td>color</td>
                 <td>pourcentage</td>
                 <td>animate</td>
+                <td>action</td>
             </tr>
         </thead>
         <tbody>

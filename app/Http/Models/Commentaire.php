@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,11 +13,11 @@ class Commentaire extends Model
     
     public function blog()
     {
-        return $this->belongsTo('App\Blog');
+        return $this->belongsTo('App\Http\Models\Blog');
     }
 
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Http\Models\User');
     }
 }

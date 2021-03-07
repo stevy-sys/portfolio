@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Blog extends Model
     protected $guarded = [];
     public function commentaire()
     {
-        return $this->hasMany('App\Commentaire');
+        return $this->hasMany('App\Http\Models\Commentaire');
     }
 }

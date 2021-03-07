@@ -20,11 +20,11 @@
             @foreach ($service as $item)
                 <tr>
                     <th scope="row">{{$item->id}}</th>
-                    <td>{{$item->color}}</td>
-                    <td class="col-lg-1">{{$item->icon}}</td>
+                    <td class="col-lg-1">{{$item->color}}</td>
+                    <td class="col-lg-2">{{$item->icon}}</td>
                     <td class="col-lg-2">{{$item->title}}</td>
-                    <td>{{$item->content}}</td>
-                    <td class="col-lg-4">
+                    <td class="col-lg-6">{{$item->content}}</td>
+                    <td class="col-lg-1">
                         <button class="btn btn-success"><a href="{{ route('service.create',['id' => $item->id]) }}">modifier</a></button>
                     </td>
                 </tr>

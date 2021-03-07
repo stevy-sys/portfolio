@@ -15,7 +15,10 @@ class ContactController extends Controller
 
     public function store()
     {
-        Mail::to('stevyralambomanana@gmail.com')->send(new contactMail());
+        if (Mail::to('stevyralambomanana@gmail.com')->send(new contactMail())) {
+            dd('ok');
+        }
+        
         return redirect()->back();
     }
 }

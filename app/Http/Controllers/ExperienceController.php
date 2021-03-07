@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Experience;
 use Illuminate\Http\Request;
+use App\Http\Models\Experience;
 
 class ExperienceController extends Controller
 {

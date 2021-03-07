@@ -19,11 +19,11 @@
             @foreach ($education as $item)
                 <tr>
                     <th scope="row">{{$item->id}}</th>
-                    <td>{{$item->id_heading}}</td>
-                    <td class="col-lg-1">{{$item->title}}</td>
-                    <td class="col-lg-2">{{$item->id_collapse}}</td>
-                    <td>{{$item->content}}</td>
-                    <td class="col-lg-4">
+                    <td class="col-lg-1">{{$item->id_heading}}</td>
+                    <td class="col-lg-2">{{$item->title}}</td>
+                    <td class="col-lg-1">{{$item->id_collapse}}</td>
+                    <td class="col-lg-6">{{$item->content}}</td>
+                    <td class="col-lg-1">
                         <button class="btn btn-success"><a href="{{ route('education.create',['id' => $item->id]) }}">modifier</a></button>
                     </td>
                 </tr>
