@@ -27,20 +27,20 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
         
         <!-- Animate.css -->
-        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/animate.css')}}">
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/icomoon.css')}}">
         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/bootstrap.css')}}">
         <!-- Flexslider  -->
-        <link rel="stylesheet" href="{{asset('css/flexslider.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/flexslider.css')}}">
         <!-- Flaticons  -->
-        <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('fonts/flaticon/font/flaticon.css')}}">
         <!-- Owl Carousel -->
-        <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/owl.theme.default.min.css')}}">
         <!-- Theme style  -->
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{asset_secure('css/style.css')}}">
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -95,21 +95,21 @@
     </div><!-- end:colorlib-page -->
 
         <!-- jQuery -->
-        <script src="{{asset('js/jquery.min.js')}}"></script>
+        <script src="{{asset_secure('js/jquery.min.js')}}"></script>
         <!-- jQuery Easing -->
-        <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
+        <script src="{{asset_secure('js/jquery.easing.1.3.js')}}"></script>
         <!-- Bootstrap -->
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset_secure('js/bootstrap.min.js')}}"></script>
         <!-- Waypoints -->
-        <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset_secure('js/jquery.waypoints.min.js')}}"></script>
         <!-- Flexslider -->
-        <script src="{{asset('js/jquery.flexslider-min.js')}}"></script>
+        <script src="{{asset_secure('js/jquery.flexslider-min.js')}}"></script>
         <!-- Owl carousel -->
-        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset_secure('js/owl.carousel.min.js')}}"></script>
         <!-- Counters -->
-        <script src="{{asset('js/jquery.countTo.js')}}"></script>
+        <script src="{{asset_secure('js/jquery.countTo.js')}}"></script>
 
         <!-- MAIN JS -->
-        <script src="{{asset('js/main.js')}}"></script>
+        <script src="{{asset_secure('js/main.js')}}"></script>
 	</body>
 </html>
