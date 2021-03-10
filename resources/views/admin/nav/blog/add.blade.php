@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'ajouter une article'])
 
 @section('content')
 <form action="{{route('blog.store') }}" method="post" enctype="multipart/form-data">

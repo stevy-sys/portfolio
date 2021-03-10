@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Toute les messages'])
 
 @section('content')
         <h1>Messages</h1>

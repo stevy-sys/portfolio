@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Modifier une experience'])
 
 @section('content')
     <form action="{{route('experience.update',['experience' => $experience->id]) }}" method="post">

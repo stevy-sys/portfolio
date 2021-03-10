@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Ajouter une competences'])
 
 @section('content')
     <form action="{{route('skill.store') }}" method="post">

@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Modifier une competences'])
 
 @section('content')
     <form action="{{route('skill.update',['skill' => $skill->id]) }}" method="post">

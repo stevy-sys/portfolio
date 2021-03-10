@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('welcome',['title' => 'Accueil'])
 
 @section('content')
     <section id="colorlib-hero" class="js-fullheight" data-section="home">

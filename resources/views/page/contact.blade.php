@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('welcome',['title' => 'Contactez moi'])
 
 @section('content')
     <section class="colorlib-contact" data-section="contact">

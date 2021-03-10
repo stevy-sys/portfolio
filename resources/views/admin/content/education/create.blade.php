@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Modifier la formation'])
 
 @section('content')
     <form action="{{route('education.update',['education' => $education->id]) }}" method="post">

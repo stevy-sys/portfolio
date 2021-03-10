@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Ajouter unee experience'])
 
 @section('content')
     <form action="{{route('experience.store') }}" method="post">

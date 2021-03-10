@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('welcome',['title' => 'A propos de moi'])
 @section('content')
     <section class="colorlib-about" data-section="about">
 				<div class="colorlib-narrow-content">

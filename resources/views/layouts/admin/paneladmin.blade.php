@@ -8,7 +8,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Creative - Bootstrap Admin Template</title>
+    <title>{{$title ?? ''}}</title>
     <!-- Bootstrap CSS -->
     <link href="{{environement() ? asset('admin/css/bootstrap.min.css') : secure_asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- bootstrap theme -->
@@ -23,10 +23,10 @@
     <!-- easy pie chart-->
     <link href="{{environement() ? asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css') : secure_asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
     <!-- owl carousel -->
-    <link rel="stylesheet" href="{{asset('admin/css/owl.carousel.css') : secure_asset('admin/css/owl.carousel.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ environement() ? asset('admin/css/owl.carousel.css') : secure_asset('admin/css/owl.carousel.css')}}" type="text/css">
     <link href="{{environement() ? asset('admin/css/jquery-jvectormap-1.2.2.css') : secure_asset('admin/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{asset('admin/css/fullcalendar.css') : secure_asset('admin/css/fullcalendar.css')}}">
+    <link rel="stylesheet" href="{{environement() ? asset('admin/css/fullcalendar.css') : secure_asset('admin/css/fullcalendar.css')}}">
     <link href="{{environement() ? asset('admin/css/widgets.css') : secure_asset('admin/css/widgets.css')}}" rel="stylesheet">
     <link href="{{environement() ? asset('admin/css/style.css') : secure_asset('admin/css/style.css')}}" rel="stylesheet">
     <link href="{{environement() ? asset('admin/css/style-responsive.css') : secure_asset('admin/css/style-responsive.css')}}" rel="stylesheet" />

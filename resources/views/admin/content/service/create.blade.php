@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Modifer une service'])
 
 @section('content')
     <form action="{{route('service.update',['service' => $service->id]) }}" method="post">

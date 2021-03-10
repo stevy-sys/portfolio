@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Ajouter une service'])
 
 @section('content')
     <form action="{{route('service.store') }}" method="post">

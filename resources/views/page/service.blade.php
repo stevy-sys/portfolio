@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('welcome',['title' => 'Mes Services'])
 
 @section('content')
     <section class="colorlib-services" data-section="services">

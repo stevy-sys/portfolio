@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Modification - '.$article->title])
 
 @section('content')
 <form action="{{route('blog.update',['blog' => $article->id]) }}" method="post" enctype="multipart/form-data">

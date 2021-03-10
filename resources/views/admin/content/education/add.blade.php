@@ -1,4 +1,4 @@
-@extends('layouts.admin.paneladmin')
+@extends('layouts.admin.paneladmin',['title' => 'Ajouter une formation'])
 
 @section('content')
     <form action="{{route('education.store') }}" method="post">
