@@ -1,7 +1,9 @@
 <?php
 
-/*function getUserName($id)
+function environement()
 {
-    $name = App\User::where('id',$id)->first()->name ;
-    return $name ;
-}*/
+    if (env("APP_ENV")=="local") {
+        return true;
+    }
+    return false ;
+}

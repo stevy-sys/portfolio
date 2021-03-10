@@ -27,20 +27,20 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
         
         <!-- Animate.css -->
-        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/animate.css') : secure_asset('css/animate.css')}}">
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/icomoon.css') : secure_asset('css/icomoon.css')}}">
         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/bootstrap.css') : secure_asset('css/bootstrap.css')}}">
         <!-- Flexslider  -->
-        <link rel="stylesheet" href="{{asset('css/flexslider.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/flexslider.css') : secure_asset('css/flexslider.css')}}">
         <!-- Flaticons  -->
-        <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('fonts/flaticon/font/flaticon.css') : secure_asset('fonts/flaticon/font/flaticon.css')}}">
         <!-- Owl Carousel -->
-        <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/owl.carousel.min.css') : secure_asset('css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/owl.theme.default.min.css') : secure_asset('css/owl.theme.default.min.css')}}">
         <!-- Theme style  -->
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{ environement() ? asset('css/style.css') : secure_asset('css/style.css')}}">
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -95,21 +95,21 @@
     </div><!-- end:colorlib-page -->
 
         <!-- jQuery -->
-        <script src="{{asset('js/jquery.min.js')}}"></script>
+        <script src="{{ environement() ? asset('js/jquery.min.js') : secure_asset('js/jquery.min.js')}}"></script>
         <!-- jQuery Easing -->
-        <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
+        <script src="{{ environement() ? asset('js/jquery.easing.1.3.js') : secure_asset('js/jquery.easing.1.3.js')}}"></script>
         <!-- Bootstrap -->
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{ environement() ? asset('js/bootstrap.min.js') : secure_asset('js/bootstrap.min.js')}}"></script>
         <!-- Waypoints -->
-        <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
+        <script src="{{ environement() ? asset('js/jquery.waypoints.min.js') : secure_asset('js/jquery.waypoints.min.js')}}"></script>
         <!-- Flexslider -->
-        <script src="{{asset('js/jquery.flexslider-min.js')}}"></script>
+        <script src="{{ environement() ? asset('js/jquery.flexslider-min.js') : secure_asset('js/jquery.flexslider-min.js')}}"></script>
         <!-- Owl carousel -->
-        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{ environement() ? asset('js/owl.carousel.min.js') : secure_asset('js/owl.carousel.min.js')}}"></script>
         <!-- Counters -->
-        <script src="{{asset('js/jquery.countTo.js')}}"></script>
+        <script src="{{ environement() ? asset('js/jquery.countTo.js') : secure_asset('js/jquery.countTo.js')}}"></script>
 
         <!-- MAIN JS -->
-        <script src="{{asset('js/main.js')}}"></script>
+        <script src="{{ environement() ? asset('js/main.js') : secure_asset('js/main.js')}}"></script>
 	</body>
 </html>

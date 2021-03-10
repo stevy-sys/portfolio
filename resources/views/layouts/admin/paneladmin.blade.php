@@ -10,28 +10,28 @@
 
     <title>Creative - Bootstrap Admin Template</title>
     <!-- Bootstrap CSS -->
-    <link href="{{asset('admin/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{environement() ? asset('admin/css/bootstrap.min.css') : secure_asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="{{asset('admin/css/bootstrap-theme.css')}}" rel="stylesheet">
+    <link href="{{environement() ? asset('admin/css/bootstrap-theme.css') : secure_asset('admin/css/bootstrap-theme.css')}}" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
-    <link href="{{asset('admin/css/elegant-icons-style.css')}}" rel="stylesheet" />
-    <link href="{{asset('admin/css/font-awesome.min.css')}}" rel="stylesheet" />
+    <link href="{{environement() ? asset('admin/css/elegant-icons-style.css') : secure_asset('admin/css/elegant-icons-style.css')}}" rel="stylesheet" />
+    <link href="{{environement() ? asset('admin/css/font-awesome.min.css') : secure_asset('admin/css/font-awesome.min.css')}}" rel="stylesheet" />
     <!-- full calendar css-->
-    <link href="{{asset('admin/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
-    <link href="{{asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" />
+    <link href="{{environement() ? asset('admin/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css') : secure_asset('admin/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
+    <link href="{{environement() ? asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.css') : secure_asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" />
     <!-- easy pie chart-->
-    <link href="{{asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{environement() ? asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css') : secure_asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
     <!-- owl carousel -->
-    <link rel="stylesheet" href="{{asset('admin/css/owl.carousel.css')}}" type="text/css">
-    <link href="{{asset('admin/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('admin/css/owl.carousel.css') : secure_asset('admin/css/owl.carousel.css')}}" type="text/css">
+    <link href="{{environement() ? asset('admin/css/jquery-jvectormap-1.2.2.css') : secure_asset('admin/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{asset('admin/css/fullcalendar.css')}}">
-    <link href="{{asset('admin/css/widgets.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/css/style-responsive.css')}}" rel="stylesheet" />
-    <link href="{{asset('admin/css/xcharts.min.css')}}" rel=" stylesheet">
-    <link href="{{asset('admin/css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('admin/css/fullcalendar.css') : secure_asset('admin/css/fullcalendar.css')}}">
+    <link href="{{environement() ? asset('admin/css/widgets.css') : secure_asset('admin/css/widgets.css')}}" rel="stylesheet">
+    <link href="{{environement() ? asset('admin/css/style.css') : secure_asset('admin/css/style.css')}}" rel="stylesheet">
+    <link href="{{environement() ? asset('admin/css/style-responsive.css') : secure_asset('admin/css/style-responsive.css')}}" rel="stylesheet" />
+    <link href="{{environement() ? asset('admin/css/xcharts.min.css') : secure_asset('admin/css/xcharts.min.css')}}" rel=" stylesheet">
+    <link href="{{environement() ? asset('admin/css/jquery-ui-1.10.4.min.css') : secure_asset('admin/css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
     <!-- =======================================================
       Theme Name: NiceAdmin
       Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -353,46 +353,46 @@
           </section>
       </section>
   <!-- javascripts -->
-    <script src="{{asset('admin/js/jquery.js')}}"></script>
-    <script src="{{asset('admin/js/jquery-ui-1.10.4.min.js')}}"></script>
-    <script src="{{asset('admin/js/jquery-1.8.3.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('admin/js/jquery-ui-1.9.2.custom.min.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery.js') : secure_asset('admin/js/jquery.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery-ui-1.10.4.min.js') : secure_asset('admin/js/jquery-ui-1.10.4.min.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery-1.8.3.min.js') : secure_asset('admin/js/jquery-1.8.3.min.js')}}"></script>
+    <script type="text/javascript" src="{{ environement() ? asset('admin/js/jquery-ui-1.9.2.custom.min.js') : secure_asset('admin/js/jquery-ui-1.9.2.custom.min.js')}}"></script>
     <!-- bootstrap -->
-    <script src="{{asset('admin/js/bootstrap.min.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/bootstrap.min.js') : secure_asset('admin/js/bootstrap.min.js')}}"></script>
     <!-- nice scroll -->
-    <script src="{{asset('admin/js/jquery.scrollTo.min.js')}}"></script>
-    <script src="{{asset('admin/js/jquery.nicescroll.js')}}" type="text/javascript"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery.scrollTo.min.js') : secure_asset('admin/js/jquery.scrollTo.min.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery.nicescroll.js') : secure_asset('admin/js/jquery.nicescroll.js')}}" type="text/javascript"></script>
     <!-- charts scripts -->
-    <script src="{{asset('admin/assets/jquery-knob/js/jquery.knob.js')}}"></script>
-    <script src="{{asset('admin/js/jquery.sparkline.js')}}" type="text/javascript"></script>
-    <script src="{{asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js')}}"></script>
-    <script src="{{asset('admin/js/owl.carousel.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/assets/jquery-knob/js/jquery.knob.js') : secure_asset('admin/assets/jquery-knob/js/jquery.knob.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/jquery.sparkline.js') : secure_asset('admin/js/jquery.sparkline.js')}}" type="text/javascript"></script>
+    <script src="{{ environement() ? asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js') : secure_asset('admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/owl.carousel.js') : secure_asset('admin/js/owl.carousel.js')}}"></script>
     <!-- jQuery full calendar -->
-    <script src="{{asset('admin/js/fullcalendar.min.js')}}"></script>
+    <script src="{{ environement() ? asset('admin/js/fullcalendar.min.js') : secure_asset('admin/js/fullcalendar.min.js')}}"></script>
       <!-- Full Google Calendar - Calendar -->
-      <script src="{{asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.js') : secure_asset('admin/assets/fullcalendar/fullcalendar/fullcalendar.js')}}"></script>
       <!--script for this page only-->
-      <script src="{{asset('admin/js/calendar-custom.js')}}"></script>
-      <script src="{{asset('admin/js/jquery.rateit.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/calendar-custom.js') : secure_asset('admin/js/calendar-custom.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery.rateit.min.js') : secure_asset('admin/js/jquery.rateit.min.js')}}"></script>
       <!-- custom select -->
-      <script src="{{asset('admin/js/jquery.customSelect.min.js')}}"></script>
-      <script src="{{asset('admin/assets/chart-master/Chart.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery.customSelect.min.js') : secure_asset('admin/js/jquery.customSelect.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/assets/chart-master/Chart.js') : secure_asset('admin/assets/chart-master/Chart.js')}}"></script>
 
       <!--custome script for all page-->
-      <script src="{{asset('admin/js/scripts.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/scripts.js') : secure_asset('admin/js/scripts.js')}}"></script>
       <!-- custom script for this page-->
-      <script src="{{asset('admin/js/sparkline-chart.js')}}"></script>
-      <script src="{{asset('admin/js/easy-pie-chart.js')}}"></script>
-      <script src="{{asset('admin/js/jquery-jvectormap-1.2.2.min.js')}}"></script>
-      <script src="{{asset('admin/js/jquery-jvectormap-world-mill-en.js')}}"></script>
-      <script src="{{asset('admin/js/xcharts.min.js')}}"></script>
-      <script src="{{asset('admin/js/jquery.autosize.min.js')}}"></script>
-      <script src="{{asset('admin/js/jquery.placeholder.min.js')}}"></script>
-      <script src="{{asset('admin/js/gdp-data.js')}}"></script>
-      <script src="{{asset('admin/js/morris.min.js')}}"></script>
-      <script src="{{asset('admin/js/sparklines.js')}}"></script>
-      <script src="{{asset('admin/js/charts.js')}}"></script>
-      <script src="{{asset('admin/js/jquery.slimscroll.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/sparkline-chart.js') : secure_asset('admin/js/sparkline-chart.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/easy-pie-chart.js') : secure_asset('admin/js/easy-pie-chart.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery-jvectormap-1.2.2.min.js') : secure_asset('admin/js/jquery-jvectormap-1.2.2.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery-jvectormap-world-mill-en.js') : secure_asset('admin/js/jquery-jvectormap-world-mill-en.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/xcharts.min.js') : secure_asset('admin/js/xcharts.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery.autosize.min.js') : secure_asset('admin/js/jquery.autosize.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery.placeholder.min.js') : secure_asset('admin/js/jquery.placeholder.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/gdp-data.js') : secure_asset('admin/js/gdp-data.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/morris.min.js') : secure_asset('admin/js/morris.min.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/sparklines.js') : secure_asset('admin/js/sparklines.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/charts.js') : secure_asset('admin/js/charts.js')}}"></script>
+      <script src="{{ environement() ? asset('admin/js/jquery.slimscroll.min.js') : secure_asset('admin/js/jquery.slimscroll.min.js')}}"></script>
       <script>
         //knob
         $(function() {
