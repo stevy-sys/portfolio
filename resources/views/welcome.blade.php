@@ -51,7 +51,6 @@
 
     </head>
     <body>
-    
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -64,15 +63,15 @@
                 <nav id="colorlib-main-menu" role="navigation" class="navbar">
                     <div id="navbar-tsy-tapakevtra" class="collapse">
                         <ul>
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/about" >About</a></li>
-                            <li><a href="/service">Services</a></li>
-                            <li><a href="/skills">Skills</a></li>
-                            <li><a href="/education">Education</a></li>
-                            <li><a href="/experience" data-nav-section="experience">Experience</a></li>
-                            <li><a href="/work" data-nav-section="work">Work</a></li>
-                            <li><a href="/blog" data-nav-section="blog">Blog</a></li>
-                            <li><a href="/contact" data-nav-section="contact">Contact</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/' ? 'active' : ''}}"><a href="/">Home</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''}}" ><a href="/about" >About</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/service' ? 'active' : ''}}" ><a href="/service">Services</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/skills' ? 'active' : ''}}" ><a href="/skills">Skills</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/education' ? 'active' : ''}}" ><a href="/education">Education</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/experience' ? 'active' : ''}}" ><a href="/experience">Experience</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/work' ? 'active' : ''}}" ><a href="/work">Work</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/blog' ? 'active' : ''}}" ><a href="/blog">Blog</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/contact' ? 'active' : ''}}" ><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
