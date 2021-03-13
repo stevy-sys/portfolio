@@ -2,8 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Education;
 use Faker\Generator as Faker;
+use App\Http\Models\Education;
 
 $factory->define(Education::class, function (Faker $faker) {
     return [

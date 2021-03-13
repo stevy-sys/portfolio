@@ -11,6 +11,6 @@ class CommentaireSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Commentaire',50)->create();
+        factory('App\Http\Models\Commentaire',50)->create();
     }
 }

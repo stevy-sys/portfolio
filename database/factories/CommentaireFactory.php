@@ -2,8 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Commentaire;
 use Faker\Generator as Faker;
+use App\Http\Models\Commentaire;
 
 $factory->define(Commentaire::class, function (Faker $faker) {
     return [

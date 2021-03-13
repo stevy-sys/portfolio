@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Models\Service;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Service;
 
 class ServiceController extends Controller
 {

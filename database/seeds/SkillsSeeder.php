@@ -11,6 +11,6 @@ class SkillsSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Skills',5)->create();
+        factory('App\Http\Models\Skills',5)->create();
     }
 }

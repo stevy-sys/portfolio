@@ -11,6 +11,6 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\About',4)->create();
+        factory('App\Http\Models\About',4)->create();
     }
 }

@@ -11,6 +11,6 @@ class WorkSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Work',6)->create();
+        factory('App\Http\Models\Work',6)->create();
     }
 }

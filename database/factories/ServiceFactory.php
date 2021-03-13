@@ -2,8 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Service;
 use Faker\Generator as Faker;
+use App\Http\Models\Service;
 
 $factory->define(Service::class, function (Faker $faker) {
     $icon = ['bulb','outline','data','phone3'];

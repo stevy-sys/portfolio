@@ -2,13 +2,14 @@
 
 @section('content')
         <h1>Messages</h1>
-        <div class="alert alert-info" role="alert">
-            <h3 class="alert-heading">Stephanie Brad</h3>
-                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-            <hr>
-            <div class="row container">
-                <button class="btn btn-primary">repondre</button>
-                <button class="btn btn-danger">supprimer</button>
+        @foreach ($message as $item)
+            <div class="alert alert-info" role="alert">
+                <h3 class="alert-heading">{{$item->name}}</h3>
+                <hr>
+                <div class="row container">
+                    <button class="btn btn-primary"> <a href="{{ route('message.show',['message' => $item->id ]) }}">Afficher</a> </button>
+                    <button class="btn btn-danger">supprimer</button>
+                </div>
             </div>
-        </div>
+        @endforeach
 @endsection

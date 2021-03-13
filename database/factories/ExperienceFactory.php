@@ -2,8 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Experience;
 use Faker\Generator as Faker;
+use App\Http\Models\Experience;
 
 $factory->define(Experience::class, function (Faker $faker) {
     $animate = ['fadeInLeft','fadeInRight','fadeInBottom','fadeInTop'];
