@@ -5,7 +5,7 @@
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
         <div class="card" >
-            <img src="{{ environement() ? asset('/storage/'.$article->img) :  secure_asset('/storage/'.$article->img)}}" width="600px" class="card-img-top" alt="...">
+            <img src="{{ environement() ? asset('storage/'.$article->img) :  secure_asset('storage/'.$article->img)}}" width="600px" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{$article->title}}</h5>
                 <p class="card-text">{{$article->content}}</p>
