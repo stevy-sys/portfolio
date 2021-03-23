@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/linkstorage', function(){
+    Artisan::call('storage:link');
+});
 
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'AboutController@index');

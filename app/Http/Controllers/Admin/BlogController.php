@@ -19,7 +19,7 @@ class BlogController extends Controller
         return view('admin.nav.blog.index',compact('blog'));
     }
 
-    public function show(Blog $blog)
+    public function show(int $blog)
     {
         $article = Blog::find($blog)->first();
         return view('admin.nav.blog.show',compact('article'));
