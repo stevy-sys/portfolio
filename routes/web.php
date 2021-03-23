@@ -18,18 +18,20 @@ Route::get('/linkstorage', function(){
     Artisan::call('storage:link');
 });
 
-Route::get('/', 'HomeController@index');
-Route::get('/about', 'AboutController@index');
+Route::get('/', 'IndexController@accueil');
+Route::get('/about', 'IndexController@about');
+Route::get('/education', 'IndexController@education');
+Route::get('/experience', 'IndexController@experience');
+Route::get('/service', 'IndexController@service');
+Route::get('/skill', 'IndexController@skills');
+Route::get('/work', 'IndexController@work');
+
+
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{id}', 'BlogController@show');
 Route::post('/blog/{id}', 'BlogController@store');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
-Route::get('/education', 'EducationController@index');
-Route::get('/experience', 'ExperienceController@index');
-Route::get('/service', 'ServiceController@index');
-Route::get('/skills', 'SkillsController@index');
-Route::get('/work', 'WorkController@index');
 
 Auth::routes();
 
