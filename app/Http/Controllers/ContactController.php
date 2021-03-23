@@ -22,10 +22,8 @@ class ContactController extends Controller
             'subject' => "required",
             'message' => "required",
         ]);
-        //dd($message);
         
         Mail::to('stevyralambomanana@gmail.com')->send(new contactMail());
-        Mail::to('autorunfu@gmail.com')->send(new contactMail());
 
         event(new MessageContactEvent($message));
 
