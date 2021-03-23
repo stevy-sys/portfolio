@@ -66,7 +66,7 @@
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/' ? 'active' : ''}}"><a href="/">Home</a></li>
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''}}" ><a href="/about" >About</a></li>
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/service' ? 'active' : ''}}" ><a href="/service">Services</a></li>
-                            <li class="{{ $_SERVER['REQUEST_URI'] == '/skill' ? 'active' : ''}}" ><a href="/skills">Skills</a></li>
+                            <li class="{{ $_SERVER['REQUEST_URI'] == '/skill' ? 'active' : ''}}" ><a href="/skill">Skills</a></li>
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/education' ? 'active' : ''}}" ><a href="/education">Education</a></li>
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/experience' ? 'active' : ''}}" ><a href="/experience">Experience</a></li>
                             <li class="{{ $_SERVER['REQUEST_URI'] == '/work' ? 'active' : ''}}" ><a href="/work">Work</a></li>
