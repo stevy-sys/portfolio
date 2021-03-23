@@ -58,7 +58,7 @@
                 <div class="text-center">
                     <div class="author-img" style="background-image: url({{asset('./images/za.jpg')}});"></div>
                     <h1 id="colorlib-logo"><a href="/">{{__('menu.nom')}}</a></h1>
-                    <span class="position"><a href="/skills">{{__('menu.metier')}}</a></span>
+                    <span class="position"><a href="/skill">{{__('menu.metier')}}</a></span>
                 </div>
                 <nav id="colorlib-main-menu" role="navigation" class="navbar">
                     <div id="navbar-tsy-tapakevtra" class="collapse">

@@ -16,13 +16,13 @@
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									@foreach ($education as $item)
 										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="{{$item->id_heading}}">
+											<div class="panel-heading" role="tab" id="heading-{{$item->id}}">
 												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{$item->id_collapse}}" aria-expanded="false" aria-controls="{{$item->id_collapse}}">{{$item->title}}
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$item->id}}" aria-expanded="false" aria-controls="collapse-{{$item->id}}">{{$item->title}}
 													</a>
 												</h4>
 											</div>
-											<div id="{{$item->id_collapse}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{$item->id_heading}}">
+											<div id="collapse-{{$item->id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{$item->id}}">
 												<div class="panel-body">
 													<p>{{$item->content}}</p>	
 												</div>
