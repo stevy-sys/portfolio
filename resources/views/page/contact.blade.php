@@ -16,7 +16,7 @@
 									<i class="icon-globe-outline"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">{{__('contact.domaine')}}</a></p>
+									<p><a href="https://kitana-develloper.herokuapp.com">www.stevy-ralambomanana.com</a></p>
 								</div>
 							</div>
 

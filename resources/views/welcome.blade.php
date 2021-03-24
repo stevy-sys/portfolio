@@ -21,7 +21,6 @@
         <meta name="twitter:card" content="" />
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico">
 
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
@@ -79,7 +78,7 @@
                 <div class="colorlib-footer">
                     <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </small> </p>
                     <ul>
-                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                        <li><a href="https://ww.facebook.com/stevytsihoarana"><i class="icon-facebook2"></i></a></li>
                         <li><a href="#"><i class="icon-twitter2"></i></a></li>
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
                         <li><a href="#"><i class="icon-linkedin2"></i></a></li>
