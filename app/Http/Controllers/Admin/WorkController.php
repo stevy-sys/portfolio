@@ -50,6 +50,8 @@ class WorkController extends Controller
             $avant1 = $work->img ;
             $avant2 = $work->video ;
             unlink('storage/'.$avant1);
+            usleep(250000);
+            clearstatcache();
             unlink('storage/'.$avant2);
         }
 
@@ -84,10 +86,12 @@ class WorkController extends Controller
 
         if($work->img AND $work->video){
             $avant1 = $work->img ;
-            unlink('storage/'.$avant1);
             $avant2 = $work->video ;
-            unlink('storage/'.$avant2);
             $work->delete();
+            unlink('storage/'.$avant2);
+            usleep(250000);
+            clearstatcache();
+            unlink('storage/'.$avant1);
         }
         return redirect()->route('work.index');
     }
