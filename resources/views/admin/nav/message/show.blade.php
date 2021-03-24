@@ -25,7 +25,7 @@
             </div>
                 <div class="col-lg-6">
                     <div class="alert alert-info" role="alert">
-                        <h3 class="alert-heading">{{$message->name}}</h3>
+                        <h3 class="alert-heading">{{$message->name}} {{$message->email}}</h3>
                         <p>{{$message->message}}</p>
                         <hr>
                         <div class="row container">

@@ -61,7 +61,7 @@ class MessageController extends Controller
             'message' => "required",
         ]);
 
-        Mail::to($data['email'])->send(new MessageMail());
+        //Mail::to($data['email'])->send(new MessageMail());
         return redirect()->back();
     }
 
