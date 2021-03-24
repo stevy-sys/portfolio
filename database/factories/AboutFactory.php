@@ -6,7 +6,7 @@ use App\Http\Models\About;
 use Faker\Generator as Faker;
 
 $factory->define(About::class, function (Faker $faker) {
-    $icon = ['bulb','outline','data','phone3'];
+    $icon = ['bulb','globe-outline','data','phone3'];
     $animate = ['fadeInLeft','fadeInRight','fadeInBottom','fadeInTop'];
     return [
         'icon' => $icon[rand(0,3)],

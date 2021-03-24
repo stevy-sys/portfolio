@@ -52,4 +52,10 @@ class IndexController extends Controller
         $work = Work::all();
         return view('page.work',['work' => $work]);
     }
+
+    public function workView(Work $work)
+    {
+        $work = Work::find($work)->first();
+        return view('page.work.index',['work' => $work]);
+    }
 }

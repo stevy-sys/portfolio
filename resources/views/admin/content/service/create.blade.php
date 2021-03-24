@@ -7,12 +7,24 @@
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">color</label>
-            <input value="{{$service->color}}" name="color" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <select class="form-control" name="color" id="">
+                    <option value="1">1</option>    
+                    <option value="2">2</option>    
+                    <option value="3">3</option>    
+                    <option value="4">4</option>    
+            </select>
         </div>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">icon</label>
-            <input value="{{$service->icon}}" name="icon" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <select class="form-control" name="icon" id="">
+                    <option value="bulb">bulb</option>    
+                    <option value="globe-outline">globe-outline</option>    
+                    <option value="data">data</option>    
+                    <option value="phone3">phone3</option>    
+            </select>
         </div>
+        
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">titre</label>
             <input value="{{$service->title}}" name="title" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">

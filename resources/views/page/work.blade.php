@@ -18,14 +18,14 @@
 
 				@foreach ($work as $item)
 				<div class="col-md-6 animate-box" data-animate-effect="{{$item->animate}}">
-					<div class="project" style="background-image: url({{$item->img}});">
+					<div class="project" style="background-image: url({{asset('storage').'/'.$item->img}});">
 						<div class="desc">
 							<div class="con">
-								<h3><a href="{{$item->url}}">{{$item->title}}</a></h3>
+								<h3><a href="/work/{{$item->id}}">{{$item->titre}}</a></h3>
 								<span>{{$item->type}}</span>
 								<p class="icon">
-									<span><a href="#"><i class="icon-share3"></i></a></span>
-									<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+									<span><a href="{{$item->url_github}}"><i class="icon-github"></i></a></span>
+									<span><a href="/work/{{$item->id}}"><i class="icon-eye"></i></a></span>
 									<span><a href="#"><i class="icon-heart"></i> 49</a></span>
 								</p>
 							</div>

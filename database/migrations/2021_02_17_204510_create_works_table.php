@@ -17,10 +17,10 @@ class CreateWorksTable extends Migration
             $table->id();
             $table->string('animate');
             $table->string('img');
-            $table->string('url');
-            $table->string('title');
+            $table->string('url_github');
+            $table->string('video');
+            $table->string('titre');
             $table->string('type');
-            $table->timestamps();
         });
     }
 

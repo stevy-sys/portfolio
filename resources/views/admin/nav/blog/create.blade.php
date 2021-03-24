@@ -20,8 +20,13 @@
       <input value="{{$article->date}}" name="date" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">animate</label>
-      <input value="{{$article->animate}}" name="animate" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1" class="form-label">animate</label>
+        <select class="form-control" name="animate" id="">
+                <option value="fadeInLeft">a partir de gauche</option>    
+                <option value="fadeInRight">a partir de droite</option>    
+                <option value="fadeInBottom">a partir de bas</option>    
+                <option value="fadeInTop">a partir de haut</option>    
+        </select>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">content</label>

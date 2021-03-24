@@ -4,16 +4,8 @@
     <form action="{{route('education.store') }}" method="post">
     @csrf
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">id_heading</label>
-            <input name="id_heading" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">title</label>
             <input  name="title" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">id_collapse</label>
-            <input name="id_collapse" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">content</label>

@@ -6,7 +6,7 @@ use Faker\Generator as Faker;
 use App\Http\Models\Service;
 
 $factory->define(Service::class, function (Faker $faker) {
-    $icon = ['bulb','outline','data','phone3'];
+    $icon = ['bulb','globe-outline','data','phone3'];
     return [
         'color' => rand(1,4),
         'icon' => $icon[rand(0,3)],

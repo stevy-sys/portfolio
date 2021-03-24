@@ -6,7 +6,7 @@ use App\Http\Models\Skills;
 use Faker\Generator as Faker;
 
 $factory->define(Skills::class, function (Faker $faker) {
-    $icon = ['bulb','outline','data','phone3'];
+    $icon = ['bulb','globe-outline','data','phone3'];
     $animate = ['fadeInLeft','fadeInRight','fadeInBottom','fadeInTop'];
     return [
         'techno' => $faker->sentence(2),

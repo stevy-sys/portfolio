@@ -25,6 +25,7 @@ Route::get('/experience', 'IndexController@experience');
 Route::get('/service', 'IndexController@service');
 Route::get('/skill', 'IndexController@skills');
 Route::get('/work', 'IndexController@work');
+Route::get('/work/{work}', 'IndexController@workView');
 
 
 Route::get('/blog', 'BlogController@index');

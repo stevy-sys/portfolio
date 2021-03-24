@@ -9,18 +9,32 @@
             <label for="exampleFormControlInput1" class="form-label">techno</label>
             <input value="{{$skill->techno}}" name="techno" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">color</label>
-            <input value="{{$skill->color}}" name="color" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <select class="form-control" name="color" id="">
+                    <option value="1">1</option>    
+                    <option value="2">2</option>    
+                    <option value="3">3</option>    
+                    <option value="4">4</option>    
+            </select>
         </div>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">pourcentage</label>
             <input value="{{$skill->pourcentage}}" name="pourcentage" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">animate</label>
-            <input value="{{$skill->animate}}" name="animate" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <select class="form-control" name="animate" id="">
+                    <option value="fadeInLeft">a partir de gauche</option>    
+                    <option value="fadeInRight">a partir de droite</option>    
+                    <option value="fadeInBottom">a partir de bas</option>    
+                    <option value="fadeInTop">a partir de haut</option>    
+            </select>
         </div>
+
         <br><br><br>
         <div>
             <input type="submit" class="btn btn-primary mt-5" value="appliquez la modification">

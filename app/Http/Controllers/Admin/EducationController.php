@@ -32,9 +32,7 @@ class EducationController extends Controller
     public function update(Education $education , Request $request)
     {
        $data = $request->validate([
-            'id_heading' => "required",
             'title' => "required",
-            'id_collapse' => "required",
             'content' => "required",
         ]);
 
@@ -45,9 +43,7 @@ class EducationController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'id_heading' => "required",
             'title' => "required",
-            'id_collapse' => "required",
             'content' => "required",
         ]);
         $education = Education::create($data);

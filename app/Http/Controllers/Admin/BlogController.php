@@ -45,6 +45,12 @@ class BlogController extends Controller
             'animate' => "required",
             'img' => "image|max:5000"
         ]);
+
+        if($blog->img){
+            $avant = $blog->img ;
+            unlink('storage/'.$avant);
+        }
+
         $blog->update($data);
         $this->storeImage($blog);
         return redirect()->route('blog.index');
@@ -70,7 +76,11 @@ class BlogController extends Controller
 
     public function destroy(Blog $blog)
     {
-        $blog->delete();
+
+        if($blog->delete()){
+            $avant = $blog->img ;
+            unlink('storage/'.$avant);
+        }
         return redirect()->route('blog.index');
     }
 

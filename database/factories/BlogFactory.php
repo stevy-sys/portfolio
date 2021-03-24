@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Blog::class, function (Faker $faker) {
     return [
         "animate" => "fadeInLeft",
-        "img" => "/images/za.jpg",
+        "img" => "/storage/blog/aHuSVzZTMsLBcJedcVSllkzrjYtHseaMPx69Cr8I.jpg",
         "date" => "20 avril 2020",
         "titre" => $faker->sentence(2),
         "title" => $faker->sentence(5),

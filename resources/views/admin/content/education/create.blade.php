@@ -5,16 +5,8 @@
     @method('PATCH')
     @csrf
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">id_heading</label>
-            <input value="{{$education->id_heading}}" name="id_heading" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">title</label>
             <input value="{{$education->title}}" name="title" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">id_collapse</label>
-            <input value="{{$education->id_collapse}}" name="id_collapse" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">content</label>
