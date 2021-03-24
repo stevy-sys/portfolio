@@ -5,8 +5,8 @@
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">{{__("service.question")}}</span>
-							<h2 class="colorlib-heading">{{__("service.titre")}}</h2>
+							<span class="heading-meta text-center">{{__("service.question")}}</span>
+							<h2 class="colorlib-heading text-center">{{__("service.titre")}}</h2>
 						</div>
 					</div>
 					<div class="row row-pt-md">

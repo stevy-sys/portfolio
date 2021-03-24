@@ -29,7 +29,7 @@ Route::get('/work/{work}', 'IndexController@workView');
 
 
 Route::get('/blog', 'BlogController@index');
-Route::get('/blog/{id}', 'BlogController@show');
+Route::get('/blog/{blog}', 'BlogController@show');
 Route::post('/blog/{id}', 'BlogController@store');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');

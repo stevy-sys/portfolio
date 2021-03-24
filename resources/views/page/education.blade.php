@@ -5,8 +5,8 @@
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">{{__('education.question')}}</span>
-							<h2 class="colorlib-heading animate-box">{{__('education.titre')}}</h2>
+							<span class="heading-meta text-center">{{__('education.question')}}</span>
+							<h2 class="colorlib-heading animate-box text-center">{{__('education.titre')}}</h2>
 						</div>
 					</div>
 					<div class="row">

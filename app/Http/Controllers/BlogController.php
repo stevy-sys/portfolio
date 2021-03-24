@@ -16,15 +16,20 @@ class BlogController extends Controller
         return view('page.blog',['blog' => $blog]);
     }
 
-    public function show($id)
+    public function show(Blog $blog)
     {
         $recently = Blog::all();
+        /*
+        dd($id);
         if (count($recently) < intval($id) OR intval($id) == 0 ) {
             return redirect('/blog');
         } else {
             $blog = Blog::find($id);
             return view('blog.index',compact('blog','recently'));
         }
+        */
+        return view('blog.index',compact('blog','recently'));
+
     }
 
     public function store(Request $request)

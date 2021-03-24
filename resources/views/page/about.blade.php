@@ -7,8 +7,8 @@
 							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="col-md-12">
 									<div class="about-desc">
-										<span class="heading-meta">{{ (__('about.a-propos'))}}</span>
-										<h2 class="colorlib-heading">{{( __('about.qui')) }}</h2>
+										<span class="heading-meta text-center">{{ (__('about.a-propos'))}}</span>
+										<h2 class="colorlib-heading text-center">{{( __('about.qui')) }}</h2>
 										<p><strong>{{(__('home.moi'))}}</strong>{{ __('about.date') }} {{ __('about.passion')}} </p>
 										<p>{{ __('about.probleme') }} {{__('about.autodidacte') }}</p>
 										<p>{{ __('about.qualite') }}</p>

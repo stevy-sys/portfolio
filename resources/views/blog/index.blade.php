@@ -1,4 +1,4 @@
-@extends('welcome',['title' => $blog->title])
+@extends('welcome',['title' => 'blog - '. $blog->title])
 
 @section('content')
 
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="widget mb-5">
-                        <h3>Recent posts</h3>
+                        <h3>Publication recent</h3>
 
                         <ul class="list-group">
                             @foreach ($recently as $recent)
