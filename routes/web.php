@@ -52,5 +52,6 @@ route::namespace('Admin')->group(function (){
     Route::resource('/admin/service', 'ServiceController');
     Route::resource('/admin/skill', 'SkillController');
     Route::resource('/admin/work', 'WorkController');
+    Route::resource('/admin/about', 'AboutController');
     //////
 });

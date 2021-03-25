@@ -334,6 +334,7 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
+                          <li><a class="" href="{{route('about.index')}}">about</a></li>
                           <li><a class="" href="{{route('service.index')}}">service</a></li>
                           <li><a class="" href="{{route('education.index')}}"><span>education</span></a></li>
                           <li><a class="" href="{{route('experience.index')}}"><span>experience</span></a></li>
