@@ -13,7 +13,7 @@
                                     <div class="desc">
                                         <h1>{{__('home.bonjour')}} <br>{{__('home.moi')}}</h1>
                                         <h2>{{__('home.portfolio')}}</h2>
-                                        <p><a href="" class="btn btn-primary btn-learn">{{__('home.telecharger')}}<i class="icon-download4"></i></a></p>
+                                        <p><a href="#" class="btn btn-primary btn-learn">{{__('home.telecharger')}}<i class="icon-download4"></i></a></p>
                                     </div>
                                 </div>
                             </div>
