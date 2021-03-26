@@ -27,7 +27,7 @@ class ExperienceController extends Controller
             $experience = Experience::where('id',$experience)->first();
             return view('admin.content.experience.create',compact('experience'));
         }
-        return view('admin.content.Experience.add');
+        return view('admin.content.experience.add');
     }
 
     public function update(Experience $experience , Request $request)
