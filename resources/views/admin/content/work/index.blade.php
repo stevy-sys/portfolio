@@ -15,6 +15,8 @@
                 <td>titre</td>
                 <td>type</td>
                 <td>video</td>
+                <td>description</td>
+                <td>action</td>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +28,7 @@
                     <td class="col-lg-2">{{$item->animate}}</td>
                     <td>{{$item->titre}}</td>
                     <td>{{$item->type}}</td>
+                    <td>{{$item->description}}</td>
                     <td>{{$item->video}}</td>
                     <td class="col-lg-4">
                         <button class="btn btn-success"><a href="{{ route('work.create',['id' => $item->id]) }}">modifier</a></button>

@@ -36,6 +36,10 @@
       <label for="exampleFormControlInput1" class="form-label">type</label>
       <input value="{{$work->type}}" name="type" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">description</label>
+      <textarea name="description" type="texte" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">{{$work->description}}</textarea>
+    </div>
 
     <br>
     <br>

@@ -44,6 +44,7 @@ class WorkController extends Controller
             'titre' => "required",
             'type' => "required",
             'video' => "required",
+            'description' => "required",
         ]);
 
         if($work->img AND $work->video){
@@ -71,6 +72,7 @@ class WorkController extends Controller
             'titre' => "required",
             'type' => "required",
             'video' => "required",
+            'description' => "required",
         ]);
 
         $work = Work::create($data);
