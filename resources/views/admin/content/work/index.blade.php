@@ -9,12 +9,10 @@
         <thead class="">
             <tr>
                 <td>id</td>
-                <td>image</td>
                 <td>github</td>
                 <td>animate</td>
                 <td>titre</td>
                 <td>type</td>
-                <td>video</td>
                 <td>description</td>
                 <td>action</td>
             </tr>
@@ -23,13 +21,11 @@
             @foreach ($work as $item)
                 <tr>
                     <th scope="row">{{$item->id}}</th>
-                    <td>{{$item->img}}</td>
                     <td class="col-lg-1">{{$item->url_github}}</td>
                     <td class="col-lg-2">{{$item->animate}}</td>
                     <td>{{$item->titre}}</td>
                     <td>{{$item->type}}</td>
                     <td>{{$item->description}}</td>
-                    <td>{{$item->video}}</td>
                     <td class="col-lg-4">
                         <button class="btn btn-success"><a href="{{ route('work.create',['id' => $item->id]) }}">modifier</a></button>
                     </td>

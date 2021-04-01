@@ -8,10 +8,10 @@
 
      <section class="mb-5 mt-5 text-center">
         <video width="720" controls>
-            <source src="{{asset('storage').'/'.$work->video}}" type="video/mp4">
+            <source src="{{ environement() ? asset('storage').'/'.$work->video : secure_asset('storage').'/'.$work->video}}" type="video/mp4">
         </video>
         <br><br>
-        <img src="{{asset('storage').'/'.$work->img}}" width="300px" alt="">
+        <img src="{{ environement() ? asset('storage').'/'.$work->img : secure_asset('storage').'/'.$work->img}}" width="300px" alt="">
     </section>
 
 

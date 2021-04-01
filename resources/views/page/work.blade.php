@@ -18,7 +18,7 @@
 
 				@foreach ($work as $item)
 				<div class="col-md-6 animate-box" data-animate-effect="{{$item->animate}}">
-					<div class="project" style="background-image: url({{asset('storage').'/'.$item->img}});">
+					<div class="project" style="background-image: url({{ environement() ? asset('storage').'/'.$item->img : secure_asset('storage').'/'.$item->img}});">
 						<div class="desc">
 							<div class="con">
 								<h3><a href="/work/{{$item->id}}">{{$item->titre}}</a></h3>
