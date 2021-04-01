@@ -19,7 +19,7 @@ class WorkController extends Controller
         return view('admin.content.work.index',compact('work'));
     }
 
-    public function show(int $work)
+    public function show(Work $work)
     {
         $work = Work::find($work)->first();
         return view('admin.nav.work.show',compact('work'));
